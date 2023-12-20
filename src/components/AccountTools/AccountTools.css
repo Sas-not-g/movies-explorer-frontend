@@ -1,0 +1,52 @@
+.tools__tool-list{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:16px;
+    padding:0 0 70px;
+}
+
+.tools__link{
+    text-align: center;
+    font-family: 'Inter', 'Arial', serif;
+    cursor:pointer;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    border:none;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    transition: opacity linear 0.1s;
+}
+
+.tools__link:hover{
+    opacity:0.7;
+}
+
+.tools__link_to-edit{
+    color: #FFF;
+}
+
+.tools__link_signout{
+    color:  #EE3465;
+}
+
+@media screen and (max-width:1279px){
+    .tools__tool-list{
+        padding: 0 0 269px;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .tools__link{
+        font-size: 12px;
+    }
+
+    .tools__tool-list{
+        padding: 0 0 40px;
+    }
+}

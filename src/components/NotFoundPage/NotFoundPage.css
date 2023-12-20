@@ -1,0 +1,62 @@
+
+.not-found__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+
+.not-found__code{
+    margin:auto 0 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.not-found__message{
+    margin:0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.not-found__return-button{
+    margin:auto 0 0 ;
+    padding-bottom: 60px;
+    color: #4285F4;
+    text-align: center;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor:pointer;
+    transition: opacity linear 0.1s;
+}
+
+.not-found__return-button:hover{
+    opacity:0.7
+}
+
+@media screen and (max-width:767px) {
+    .not-found__code{
+        font-size: 80px;
+    }
+
+    .not-found__message{
+        font-size: 12px;
+    }
+
+    .not-found__return-button{
+        font-size: 12px;
+    }
+}

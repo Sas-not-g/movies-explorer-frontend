@@ -1,1 +1,6 @@
-# movies-explorer-frontend
+# Этап 3 JSX Вёрстка
+
+## Используемый макет:
+
+dark-2
+
