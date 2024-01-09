@@ -1,0 +1,154 @@
+.project{
+    max-width: 1140px;
+    width: 100%;
+    padding: 110px 0;
+}
+
+.project__header{
+    color: #FFF;
+    margin:0;
+    width:100%;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.project__flex{
+    display:flex;
+    padding: 70px 0 110px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.project__topic{
+    display:flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.project__topic-header{
+    margin:0;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.project__topic-text{
+    margin:0;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.project__weeks{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
+}
+
+.project__weeks-text{
+    margin:0;
+    padding: 9px 0;
+    text-align: center;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project__one-week{
+    color: #000;
+    background-color: #3DDC84;
+}
+
+.project__four-week{
+    color: #fff;
+    background-color: #303030;
+}
+
+.project__week-theme{
+    color:#8B8B8B;
+    padding:0;
+    padding-top:14px;
+}
+
+@media screen and (max-width:1279px) {
+    .project{
+        width: calc(100% - 100px);
+        padding: 90px 0;
+    }
+    .project__flex{
+        gap:30px;
+        padding:70px 0 93px;
+    }
+
+    .project__topic{
+        max-width:319px;
+        gap:22px;
+    }
+
+    .project__topic-text{
+        font-size:12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .project{
+        width: calc(100% - 36px);
+        padding: 70px 0;
+    }
+    .project__flex{
+        flex-direction: column;
+        gap:56px;
+        padding:60px 0;
+        align-items: center;
+    }
+
+    .project__topic{
+        gap:16px
+    }
+
+    .project__topic-header{
+        font-size: 18px;
+        letter-spacing: -0.72px;
+    }
+
+    .project__topic-text{
+        font-size:11px;
+        line-height: 16px;
+    }
+
+    .project__header{
+        font-size: 18px;
+        letter-spacing: -0.72px;
+        padding-bottom: 28px;
+    }
+
+    .project__weeks-text{
+        padding: 11px 0;
+        font-size: 11px;
+    }
+
+    .project__week-theme{
+        padding-top:10px;
+    }
+
+    .project__weeks{
+        grid-template-columns: 5fr 9fr;
+    }
+
+}

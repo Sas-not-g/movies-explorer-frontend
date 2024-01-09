@@ -1,0 +1,146 @@
+.movies__card{
+    max-width: 360px;
+    width:100%;
+    list-style-type: none;
+    position:relative;
+    object-fit: contain;
+    justify-self: center;
+    height:100%;
+}
+
+.movies__film-preview{
+    width:100%;
+    height:81.3%;
+    max-height:201px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.movies__card-save{
+    opacity:0;
+    transition: opacity linear 0.1s;
+    position:absolute;
+    border:none;
+    border-radius: 30px;
+    background-color: #313131;
+    top: 14px;
+    right:14px;
+    color: #FFF;
+    margin:0;
+    padding:6px 7px;
+    text-align: center;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 9px;
+    cursor:pointer;
+}
+
+.movies__card:hover .movies__card-save{
+    opacity:1;
+}
+
+.movies__card:hover .movies__card-save:hover{
+    opacity:0.92;
+}
+
+.movies__card-saved , .movies__card-remove{
+    position:absolute;
+    border:none;
+    border-radius: 30px;
+    top: 14px;
+    right:14px;
+    background-color: transparent;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    transition: opacity linear 0.1s;
+}
+
+.movies__card-saved:hover{
+    opacity:0.92;
+}
+
+.movies__card-remove{
+    opacity:0;
+    transition: opacity linear 0.1s;
+}
+
+.movies__card:hover .movies__card-remove{
+    opacity:1;
+}
+
+.movies__card:hover .movies__card-remove:hover{
+    opacity:0.92;
+}
+
+.movies__description-bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 14px 0;
+}
+
+.movies__movie-title{
+    margin:0;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.movies__movie-lenght{
+    margin:0;
+    padding: 3px 4px;
+    color: #8B8B8B;
+    background-color: #2F2F2F;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+}
+
+@media screen and (max-width:1279px){
+
+    .movies__description-bar{
+        padding:25px 0 0;
+    }
+
+    .movies__film-preview{
+        max-height: 190px;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    .movies__film-preview{
+        max-height: 168px;
+    }
+
+    .movies__card {
+        max-width: 339px;
+    }
+
+    .movies__description-bar{
+        padding:16px 0 0;
+    }
+
+    .movies__movie-title{
+        font-size: 12px;
+    }
+
+    .movies__card-remove, .movies__card-save{
+        opacity:1;
+    }
+
+    .movies__card-save, .movies__card-saved, .movies__card-remove{
+        top:10px;
+        right:10px;
+    }
+}

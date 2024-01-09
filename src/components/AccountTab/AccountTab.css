@@ -1,0 +1,147 @@
+.account-tab__account-link{
+  margin:0;
+  padding: 8px 20px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Inter', 'Arial', serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 20px;
+  background-color: #313131;
+  transition: opacity linear 0.1s;
+}
+
+.account-tab__account-link:hover{
+  opacity:0.8;
+}
+
+.account-tab__auth-links{
+  display: flex;
+  gap: 10px;
+  max-height: 32px;
+}
+
+.account-tab__auth-link{
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin:0;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Inter', 'Arial', serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  transition:opacity linear 0.1s;
+}
+
+.account-tab__auth-link:hover{
+  opacity:0.8;
+}
+
+.account-tab__auth-link_signup{
+  color: #FFF;
+  background-color: transparent;
+}
+
+.account-tab__auth-link_signin{
+  color: #000;
+  background-color: #3DDC84;
+}
+
+.account-tab__menu-button{
+  position: absolute;
+  right:0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  width: 44px;
+  padding:11px 0;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity linear 0.1s;
+}
+
+.account-tab__menu-button:hover{
+  opacity:0.8
+}
+
+
+.account-tab__icon-bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #aaa;
+  transition: .3s;
+}
+
+.account-tab__icon-bar + .account-tab__icon-bar {
+  margin-top: 7px;
+}
+
+.account-tab__icon-bar_opened:nth-of-type(1) {
+  transform: translate3d(0,10px,0) rotate(45deg);
+}
+
+.account-tab__icon-bar_opened:nth-of-type(2) {
+  opacity: 0;
+}
+
+.account-tab__icon-bar_opened:nth-of-type(3) {
+  transform: translate3d(0,-10px,0) rotate(-45deg);
+}
+
+@media screen and (max-width:768px){
+  .account-tab__account-link{
+      display:none
+  }
+
+  .account-tab__menu-button{
+    display:flex;
+  }
+}
+
+@media screen and (max-width:767px){
+
+  .account-tab__auth-links{
+    gap: 2px;
+    max-height: 32px;
+  }
+
+  .account-tab__auth-link{
+    font-size: 10px;
+    padding:5px 12px;
+  }
+
+  .account-tab__menu-button{
+    width: 40px;
+  }
+
+  .account-tab__icon-bar{
+    width:22px;
+    height:2.5px;
+  }
+
+  .account-tab__icon-bar + .account-tab__icon-bar {
+    margin-top: 6.5px;
+  }
+
+  .account-tab__icon-bar_opened:nth-of-type(1) {
+    transform: translate3d(0,8.5px,0) rotate(45deg);
+  }
+
+  .account-tab__icon-bar_opened:nth-of-type(3) {
+    transform: translate3d(0,-8.5px,0) rotate(-45deg);
+  }
+}
+
+
+  

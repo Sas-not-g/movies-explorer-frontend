@@ -1,0 +1,172 @@
+.aboutme__wrapper{
+    width: 100%;
+    max-width: 1140px;
+    padding: 110px 0 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme__header{
+    color: #FFF;
+    margin:0;
+    width:100%;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.aboutme__student-info{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding:66px 0 0;
+
+}
+
+.aboutme__topic{
+    width:100%;
+    max-width: 600px;
+    display:flex;
+    flex-direction: column;
+}
+
+.aboutme__topic-header{
+    margin:0;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -2px;
+}
+
+.aboutme__topic-status{
+    margin:0;
+    padding: 18px 0 26px;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.aboutme__topic-about{
+    margin:0;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.aboutme__github{
+    width: 0%;
+    margin-top:auto;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity:1;
+    transition: opacity linear 0.1s;
+}
+
+.aboutme__github:hover{
+    opacity:0.6;
+}
+
+.aboutme__photo{
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 75% 25%;
+    height:100%;
+    max-width:270px;
+    max-height: 327px;
+}
+
+@media screen and (max-width:1279px) {
+    .aboutme__wrapper{
+        width:calc(100% - 100px);
+        padding:90px 0;
+    }
+
+    .aboutme__topic-header{
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.6px;
+    }
+
+    .aboutme__topic-status{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 16px 0 20px;
+    }
+
+    .aboutme__topic-about{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .aboutme__photo{
+        max-width:255px;
+        max-height: 307px;
+    }
+
+    .aboutme__student-info{
+        gap:50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .aboutme__wrapper{
+        width:calc(100% - 28px);
+        padding:70px 0;
+    }
+
+    .aboutme__header{
+        font-size: 18px;
+        letter-spacing: -0.72px;
+        padding-bottom: 28px;
+    }
+
+    .aboutme__topic-header{
+        font-size: 30px;
+        line-height: normal;
+        letter-spacing: -1.2px;
+    }
+
+    .aboutme__topic-status{
+        font-size: 11px;
+        line-height: 16px;
+        padding: 20px 0 20px;
+    }
+
+    .aboutme__topic-about{
+        font-size: 11px;
+        line-height: 16px;
+        padding-bottom: 40px
+    }
+
+    .aboutme__photo{
+        width:100%;
+        max-width:292px;
+    }
+
+    .aboutme__student-info{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:40px;
+        padding: 60px 0 0;
+    }
+}

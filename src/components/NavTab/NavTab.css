@@ -1,0 +1,49 @@
+.navigation {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    margin-top: 151px;
+    gap:10px;
+}
+
+.navigation__button{
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    text-align: center;
+    max-width:96px;
+    width:100%;
+    background-color: #303030;
+    color: #FFF;
+    font-family: 'Inter', 'Arial', serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    transition:opacity linear 0.1s;
+}
+
+.navigation__button:hover{
+    opacity:0.8;
+}
+
+@media screen and (max-width:1279px){
+    .navigation{
+        margin-top: 314px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .navigation{
+        margin-top: 212px;
+        gap:6px;
+    }
+
+    .navigation__button{
+        max-width:82px;
+        font-size: 10px;
+        padding: 5px 0;
+        border-radius: 6px;
+    }
+}

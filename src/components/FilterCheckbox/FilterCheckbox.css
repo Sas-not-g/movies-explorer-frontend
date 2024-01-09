@@ -1,0 +1,52 @@
+.filter{
+    width:36px;
+    height:14px;
+    position: relative;
+    display:inline-block;
+    transition: opacity linear 0.1s;
+}
+
+.filter:hover{
+    opacity: 0.8;
+}
+
+.filter__input{
+    visibility: hidden;
+    width:0;
+    height: 0;
+}
+
+.filter__switch-circle{
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: #343434;
+}
+
+.filter__switch-circle:before{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    left: 2px;
+    top:2px;
+    background-color: #A0A0A0;
+    transition: .4s;
+}
+
+.filter__input:checked + .filter__switch-circle{
+    background-color: #2BE080;
+}
+
+.filter__input:checked + .filter__switch-circle:before{
+  transform: translateX(calc(36px - 14px));
+  background-color: #FFF;
+}
+
